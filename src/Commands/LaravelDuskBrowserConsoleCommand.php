@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace MHA\LaravelDuskBrowserConsole\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelDuskBrowserConsoleCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-dusk-browser-console';
 
     public $description = 'My command';
 

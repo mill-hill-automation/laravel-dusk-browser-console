@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace MHA\LaravelDuskBrowserConsole;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use MHA\LaravelDuskBrowserConsole\Commands\LaravelDuskBrowserConsoleCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelDuskBrowserConsoleServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-dusk-browser-console')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel-dusk-browser-console_table')
+            ->hasCommand(LaravelDuskBrowserConsoleCommand::class);
     }
 }

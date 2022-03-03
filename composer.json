@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "mill-hill-automation/laravel-dusk-browser-console",
+    "description": "A laravel package for adding browser console assertions in Laravel Dusk",
     "keywords": [
-        ":vendor_name",
+        "mill-hill-automation",
         "laravel",
-        ":package_slug"
+        "laravel-dusk-browser-console"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/mill-hill-automation/laravel-dusk-browser-console",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Sami Greenbury",
+            "email": "hello@mha.systems",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "MHA\\LaravelDuskBrowserConsole\\": "src",
+            "MHA\\LaravelDuskBrowserConsole\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "MHA\\LaravelDuskBrowserConsole\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "MHA\\LaravelDuskBrowserConsole\\LaravelDuskBrowserConsoleServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelDuskBrowserConsole": "MHA\\LaravelDuskBrowserConsole\\Facades\\LaravelDuskBrowserConsole"
             }
         }
     },
