@@ -2,9 +2,9 @@
 
 namespace MHA\LaravelDuskBrowserConsole;
 
+use MHA\LaravelDuskBrowserConsole\Commands\LaravelDuskBrowserConsoleCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use MHA\LaravelDuskBrowserConsole\Commands\LaravelDuskBrowserConsoleCommand;
 
 class LaravelDuskBrowserConsoleServiceProvider extends PackageServiceProvider
 {
